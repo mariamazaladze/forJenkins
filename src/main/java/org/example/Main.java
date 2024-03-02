@@ -12,6 +12,8 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
+import java.util.ArrayList;
+
 @Listeners({ScreenShooter.class})
 
 public class Main {
@@ -19,7 +21,7 @@ public class Main {
         System.out.println("Hello world!");
     }
 //yy
-    
+
 
     WebDriver driver = new ChromeDriver();
 
@@ -68,6 +70,9 @@ public class Main {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(ser.getText(), "1maroaaaam");
     }
+
+
+
 
 }
 
