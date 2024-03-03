@@ -57,7 +57,7 @@ public class Array {
         ArrayList<Integer> neww = new ArrayList();
 
         for (int i = 0; i < k.size(); i++) {
-            if (i == 0) neww.add(k.get(0));
+            if (i == 0) neww.add(k.get(i));
             else if (neww.get(i - 1) > k.get(i)) {
 
                 neww.set(i - 1, k.get(i));
